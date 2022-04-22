@@ -124,9 +124,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Configs\AppSecretKeys.config" />
     <Content Include="Content\aos\aos.css" />
     <Content Include="Content\aos\aos.js" />
     <Content Include="Content\bootstrap-icons\bootstrap-icons.css" />
@@ -215,7 +217,13 @@
     <Content Include="Content\typed.js\typed.js" />
     <Content Include="Content\typed.js\typed.min.js" />
     <Content Include="Content\waypoints\noframework.waypoints.js" />
-    <Content Include="favicon.ico" />
+    <Content Include="Content\favicon\about.txt" />
+    <Content Include="Content\favicon\android-chrome-192x192.png" />
+    <Content Include="Content\favicon\android-chrome-512x512.png" />
+    <Content Include="Content\favicon\apple-touch-icon.png" />
+    <Content Include="Content\favicon\favicon-16x16.png" />
+    <Content Include="Content\favicon\favicon-32x32.png" />
+    <Content Include="Content\favicon\favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\Custom.js" />
@@ -343,8 +351,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Configs\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -381,6 +387,8 @@
     <Content Include="Content\boxicons\fonts\boxicons.woff" />
     <Content Include="Content\boxicons\fonts\boxicons.woff2" />
     <Content Include="Content\typed.js\typed.min.js.map" />
+    <Content Include="Content\EnriqueGarciaResume IT.pdf" />
+    <Content Include="Content\favicon\site.webmanifest" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_LayoutOrignial.cshtml" />
     <Content Include="Views\Home\Links.cshtml" />
@@ -388,6 +396,7 @@
     <Content Include="Views\Home\Portfolio.cshtml" />
     <Content Include="_Archive\assets\vendor\typed.js\typed.min.js.map" />
     <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\EmailConfirmation.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

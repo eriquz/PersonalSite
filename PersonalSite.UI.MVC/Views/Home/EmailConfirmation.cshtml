@@ -1,0 +1,55 @@
+﻿@model PersonalSite.UI.MVC.Models.ContactViewModel
+
+@{
+    ViewBag.Title = "EmailConfirmation";
+}
+<main id="main">
+    <section>
+    <div class="alert alert-success w-50 mx-auto my-5">Email Has been Sent!</div>
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Name)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Email)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Subject)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Subject)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Message)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Message)
+                    </dd>
+
+                </dl>
+            </div>
+
+            <div class="text-left p-5">
+            @Html.ActionLink("Back to Home", "Index", null, (new { @class = "btn btn-secondary m-3" }))
+            </div>
+        </div>
+    </section>
+</main>
+
