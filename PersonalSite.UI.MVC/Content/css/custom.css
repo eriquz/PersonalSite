@@ -15,20 +15,38 @@
 #headshot {
     border-radius: 15%;
     height:auto;
-    
+    margin-top: 15%;
 }
 
+
+#hero h2 {
+    text-shadow: 3px 3px 6px black;
+    color: #fff;
+    margin: 10px 0 0 0;
+    font-size: 30px;
+}
+
+#hero h1 {
+    text-shadow: 3px 3px 6px white;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #222222;
+}
 /*#endregion */
 
 /*--------------------------------------------------------------
 # Links
 --------------------------------------------------------------*/
- .member {
+
+.member {
     text-align: center;
-    margin-bottom: 20px;
+    margin:25px;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 10);
-    padding: 30px 20px;
+    padding: 40px 20px;
     background: #fff;
+    height: 440px;
 }
 
 .member img {
@@ -57,7 +75,22 @@
     font-weight: normal;
     color: #ffffff;
 }
-
+/*.ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0 0 0;
+    padding: .5em .5em .5em .7em;
+    font-size: 100%;
+    width: 60%;
+    height: auto;
+}
+.ui-accordion .ui-accordion-content {
+    padding: 1em 2.2em;
+    border-top: 0;
+    overflow: hidden;
+    width: 60%;
+}*/
 
 /*#region resume */
 #main {
@@ -102,4 +135,3 @@
     margin-left: 20px;
 }
 /*#endregion */
-

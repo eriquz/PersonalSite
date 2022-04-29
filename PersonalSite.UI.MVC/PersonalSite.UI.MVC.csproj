@@ -387,8 +387,9 @@
     <Content Include="Content\boxicons\fonts\boxicons.woff" />
     <Content Include="Content\boxicons\fonts\boxicons.woff2" />
     <Content Include="Content\typed.js\typed.min.js.map" />
-    <Content Include="Content\EnriqueGarciaResume IT.pdf" />
+    <Content Include="Content\EnriqueGarciaResumeIT.pdf" />
     <Content Include="Content\favicon\site.webmanifest" />
+    <Content Include="Content\EnriqueGarciaResumeIT-Updated.pdf" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_LayoutOrignial.cshtml" />
     <Content Include="Views\Home\Links.cshtml" />
