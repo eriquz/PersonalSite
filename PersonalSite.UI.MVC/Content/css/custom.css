@@ -135,3 +135,25 @@
     margin-left: 20px;
 }
 /*#endregion */
+
+/*Active effect on what page you are loaded on.*/
+/*.menu li.active a {
+    text-decoration: underline !important;
+    text-decoration-color: #34b7a7 !important;
+    color: #222222 !important;
+}*/
+
+.navbar > ul > li > a,
+.navbar > ul > li > a:focus {
+    text-transform: uppercase;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #222222;
+}
+    .navbar > ul > li > a:before {
+        background-color: #34b7a7;
+    }
+
+.Links{
+
+}

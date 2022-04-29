@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Enrique - @ViewBag.Title</title>
-    <meta content="" name="Peronal Website">
-    <meta content="" name="Full Stack Web Developer">
+    <title>Enrique | @ViewBag.Title</title>
+    <meta content="Personal Site, Jr. Web Developer Enrique Garcia." name="description">
+    <meta content="Centriq Training, Web Developer, Web Development, Full Stack, MVC" name="keywords">
 
     <!-- Favicons -->
     <link href="~/Content/favicon/favicon.ico" rel="icon">
@@ -33,12 +33,7 @@
     <!--Custom.cc-->
     <link href="~/Content/css/custom.css" rel="stylesheet" />
 
-    <!-- =======================================================
-    * Template Name: Kelly - v4.7.0
-    * Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+
 </head>
 
 <body>
@@ -65,19 +60,19 @@
             </nav><!-- .navbar -->
 
             <div class="header-social-links">
-                @*<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>*@
-                <a href="https://www.linkedin.com/in/enrique-garcia1010/" class="linkedin"><i class="fa-lg bi bi-linkedin"></i></a>
-                <a href="https://github.com/eriquz" class="linkedin"><i class="fa-lg bi bi-github"></i></a>
+                <a href="https://www.linkedin.com/in/enrique-garcia1010/" class="linkedin" target="_blank"><i class="fa-lg bi bi-linkedin"></i></a>
+                <a href="https://github.com/eriquz" class="linkedin" target="_blank"><i class="fa-lg bi bi-github"></i></a>
             </div>
 
         </div>
 
     </header><!-- End Header -->
-
     <!--Renders any View upon Request-->
-    @RenderBody()
+    @*class=container body-content*@
+    <div style="margin-top: 2em">
+        @RenderBody()
+
+    </div>
 
     <!-- ======= Footer ======= -->
     <footer id="footer">
@@ -116,7 +111,21 @@
     <!--Custom JS-->
     <script src="~/Scripts/Custom.js"></script>
 
-    @RenderSection("Scripts" , false)
-</body>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+
+
+    @RenderSection("Scripts", false)
+
+    <script>
+        $('nav ul li a').each(function () {
+            if ($(this).attr('href') == window.location.pathname) {
+                $(this).addClass('active');
+            }
+        });
+
+    </script>
+</body>
 </html>
